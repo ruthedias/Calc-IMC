@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+    <a class="title" href="{% url "home" %}"><img id="iconReturn" src="{% static "calc/img/icon.png" %}" alt=""><span>Voltar</span></a>
+    <h1 class="title">Calcular IMC</h1>
+    <div class="containerCenter">
+            <div class="form">
+                <div class="inputForm">
+                    <label for="altura" class="labelIMC">Altura</label>
+                    <input type="number" id="altura">
+                </div>
+                <div class="inputForm">
+                    <label for="peso" class="labelIMC">Peso</label>
+                    <input type="number" id="peso">
+                </div>
+                <button class="buttonIMC" type="submit" onClick="CalcIMC()">Calcular IMC</button>
+                <p class="textForm" id="resultado"></p>
+            </div>
+    </div>
+    <div class="container">
+        <h1 class="title">Riscos Associados à classificação do IMC:</h1>
+        <ul>
+            <li class="imcInfo">Magreza: Deficiências nutricionais, osteoporose, anemia, baixa imunidade e problemas hormonais.</li>
+            <li class="imcInfo">Normal: Menor risco de doenças relacionadas ao peso. É considerada a faixa ideal para a maioria das pessoas.</li>
+            <li class="imcInfo">Sobrepeso: Maior probabilidade de desenvolver hipertensão, problemas cardíacos, diabetes tipo 2 e doenças articulares.</li>
+            <li class="imcInfo">Obesidade grau I: Alto risco de diabetes tipo 2, hipertensão, problemas cardiovasculares e articulares, como osteoartrite.</li>
+            <li class="imcInfo">Obesidade grau II: Risco elevado de doenças graves, como apneia do sono, doenças cardíacas, diabetes e algumas formas de câncer.</li>
+            <li class="imcInfo">Obesidade grau III: Risco muito alto de doenças crônicas graves e comorbidades, incluindo problemas respiratórios, hepáticos, doenças cardíacas graves e alta mortalidade.</p></li>
+        </ul>
+        <p class="textForm"> 
+    </div>
+{% endblock main %}

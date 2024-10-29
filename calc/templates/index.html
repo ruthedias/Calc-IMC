@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+    <div class="container">
+        <h1 class="title">A IMPORTÂNCIA DE MANTER UMA BOA ALIMENTAÇÃO</h1>
+        <P class="text">"O cuidado com a saúde e o bem-estar passam diretamente por uma alimentação saudável e equilibrada. Os benefícios para quem come bem podem ser sentidos tanto física como mentalmente. Além de ter mais disposição para as tarefas diárias, quem se alimenta de forma saudável está menos suscetível a doenças como câncer, depressão, hipertensão, obesidade, anemia, diabetes, entre outras. Mas quais são os alimentos que compõem uma refeição equilibrada?"</P>
+        <P class="text">"(...)Uma alimentação adequada garante uma boa nutrição e o bom funcionamento de todo o corpo. De acordo com a professora Luísa, frutas, legumes, verduras, grãos diversos, oleaginosas, tubérculos, raízes, carnes e ovos são saudáveis e excelentes fontes de fibras, vitaminas e minerais, além de vários compostos que são essenciais para a manutenção da saúde e a prevenção de muitas doenças. “Alimentos processados podem integrar a alimentação, desde que consumidos em pequenas quantidades e sempre como parte ou acompanhamento de preparações culinárias com base em alimentos in natura ou minimamente processados. Alimentos ultraprocessados devem ser evitados”, completa."</P>
+        <a class="link" href="https://www.unisinos.br/noticias/a-importancia-de-cuidar-da-alimentacao/#:~:text=Os%20benef%C3%ADcios%20para%20quem%20come,anemia%2C%20diabetes%2C%20entre%20outras.">UNISINOS. A importância de cuidar da alimentação, 2024.</a>
+    </div>
+    <div class="container">
+        <h1 class="title">IMPORTÂNCIA DO IMC</h1>
+        <p class="text">"Muitas pessoas buscam descobrir seu IMC quando iniciam uma dieta específica ou uma atividade física. E estão certas, pois ele aponta a normalidade - peso adequado -, a magreza ou a obesidade em diferentes níveis. (...)O que este número final diz sobre a saúde de cada pessoa?" <a href="" class="clink">Clique aqui ou no botão abaixo para calcular e descobrir o que o seu IMC diz sobre seu estado de peso atual</a></p>
+        <a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/o-que-o-indice-de-massa-corporal-imc-diz-sobre-sua-saude#:~:text=Criado%20no%20s%C3%A9culo%2019%20pelo,n%C3%A3o%20com%20o%20peso%20ideal.&text=Muitas%20pessoas%20buscam%20descobrir%20seu,espec%C3%ADfica%20ou%20uma%20atividade%20f%C3%ADsica." class="link">TDJfT. O que o Índice de Massa Corporal (IMC) diz sobre sua saúde. 2024.</a>
+    </div>
+    <div class="containerCenter">
+        <a href="{% url "calcIMC" %}"><button class="buttonIMC">Calcular IMC</button></a>
+    </div>
+
+{% endblock main %}
